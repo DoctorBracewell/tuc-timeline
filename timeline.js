@@ -1,4 +1,4 @@
-fetch('https://www.drbracewell.co.uk/tuc-timeline/timeline-content.json')
+fetch('https://www.drbracewell.dev/tuc-timeline/timeline-content.json')
    .then(response => {
        if (!response.ok) {
            throw new Error("HTTP error " + response.status);
