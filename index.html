@@ -1,88 +1,99 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>TUC Timeline</title>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>TUC Timeline</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪳</text></svg>"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pacifico&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-      <link rel="stylesheet" href="timeline.css" />
-      
-    </head>
-    <body>
-      <section class="fade-in">
-        <div class="count-up-container">
-          <div class="start-text large-text" id="count-up"></div>
-        </div>
-      </section>
+  <body>
+    <section class="fade-in">
+      <div class="count-up-container">
+        <div class="start-text large-text" id="counter"></div>
+      </div>
+    </section>
 
-      <section style="display:none;" id="entire-content" class="animate-bottom">
+    <section style="display: none" id="entire-content" class="animate-bottom">
       <header>
-        <a href="https://drbracewell.dev" class="home">Head Home?</a>
-
         <p class="disclaimer">
-          The dates within this timeline are based off information from the book series and calculated estimations, but are not guaranteed to be entirely accurate.<br /><br />
-          This timeline uses <strong>1st July 2003</strong> as the time of Gregor's first fall, and as a base for other dates.
+          The dates within this timeline are based off information from the book
+          series and calculated estimations, but are not guaranteed to be
+          entirely accurate.<br /><br />
+          This timeline uses <strong>1st July 2003</strong> as the time of
+          Gregor's first fall, and as a base for other dates.
         </p>
 
         <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
+          <div class="progress-bar" id="scrollBar"></div>
         </div>
       </header>
-      
-
 
       <section class="start">
-        <div class="start-text large-text"><span id="bubble">1600</span><div class="start-text small">(ish)</div></div>
+        <div class="start-text large-text">
+          <span id="bubble">1600</span>
+          <div class="start-text small">(ish)</div>
+        </div>
       </section>
 
       <section class="timeline">
-
-          <div class="main-line" id="sandwhich-start">
-            <div class="line-circle large-circle"><a class="begin"><span class="center-text">Begin<br />⮟</span></a></div>
-            <div class="custom-gap 25" id="scroll-to"></div>
+        <div class="main-line" id="sandwich-start">
+          <div class="line-circle large-circle">
+            <a class="begin"
+              ><span class="center-text">Begin<br />⮟</span></a
+            >
           </div>
+          <div class="custom-gap 25" id="scroll-to"></div>
+        </div>
 
-          <div class="time-skip">Nearly 400 years later...</div>
+        <div class="time-skip">Nearly 400 years later...</div>
 
-          <div class="main-line" id="set-up"></div>
+        <div class="main-line" id="set-up"></div>
 
-          <div class="time-skip">Gregor the Overlander</div>
+        <div class="time-skip">Gregor the Overlander</div>
 
-          <div class="main-line" id="gregor-the-overlander"></div>
+        <div class="main-line" id="gregor-the-overlander"></div>
 
-          <div class="time-skip">Prophecy of Bane</div>
+        <div class="time-skip">Prophecy of Bane</div>
 
-          <div class="main-line" id="prophecy-of-bane"></div>
+        <div class="main-line" id="prophecy-of-bane"></div>
 
-          <div class="time-skip">Curse of the Warmbloods</div>
+        <div class="time-skip">Curse of the Warmbloods</div>
 
-          <div class="main-line" id="curse-of-warmbloods"></div>
+        <div class="main-line" id="curse-of-warmbloods"></div>
 
-          <div class="time-skip">Mark of Secret</div>
+        <div class="time-skip">Mark of Secret</div>
 
-          <div class="main-line" id="mark-of-secret"> </div>
+        <div class="main-line" id="mark-of-secret"></div>
 
-          <div class="time-skip">Code of Claw</div>
+        <div class="time-skip">Code of Claw</div>
 
-          <div class="main-line" id="code-of-claw"></div>
-
+        <div class="main-line" id="code-of-claw"></div>
       </section>
 
       <footer class="footer">
         <p>
-          Contact Me | <a href="mailto:doctorbracewell@gmail.com">doctorbracewell@gmail.com</a><br />
+          Contact Me |
+          <a href="mailto:doctorbracewell@gmail.com"
+            >doctorbracewell@gmail.com</a
+          ><br />
           An interactive TUC timeline<br />
-          All content owned and controlled by <a href="https://drbracewell.dev">DrBracewell</a> | © 2019
+          All content owned and controlled by <a href="./">DrBracewell</a> | ©
+          <span id="footerDate"></span>
         </p>
-      </footer >
+      </footer>
     </section>
 
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/countUp.min.js"></script>
-      <script type="text/javascript" src="timeline.js"></script>
-
-    </body>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
