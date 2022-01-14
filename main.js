@@ -1,6 +1,9 @@
 import "./style.css";
 import timelineData from "./timeline-content.json";
 import { CountUp } from "countup.js";
+import setFavicon from "@drbracewell/favicon-emoji";
+
+setFavicon("🪳");
 
 // Custom web element as a replacement to createElement() and appendChild()
 class TimelineNode extends HTMLElement {
