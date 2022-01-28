@@ -1,6 +1,5 @@
-<h1 align="center">Welcome to The Underland Chronicles Timeline 👋</h1>
+<h1 align="center">The Underland Chronicles Timeline</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
@@ -9,12 +8,6 @@
 > Interactive timeline of the Underland Chronicles books by Suzanne Collins
 
 ### 🏠 [Homepage](https://brace.dev/tuc-timeline)
-
-## Install
-
-```sh
-npm install
-```
 
 ## Author
 
