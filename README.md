@@ -5,7 +5,7 @@
   </a>
 </p>
 
-> Interactive timeline of the Underland Chronicles books by Suzanne Collins
+> Interactive timeline of the Underland Chronicles books by Suzanne Collins.
 
 ### 🏠 [Homepage](https://brace.dev/tuc-timeline)
 
